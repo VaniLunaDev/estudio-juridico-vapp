@@ -41,10 +41,10 @@ export const metadata: Metadata = {
       "Estudio jurídico en Mendoza. Asesoramiento integral en derecho societario, laboral, MASC, ejecuciones, contratos e inmobiliario.",
     images: [
       {
-        url: "/img/hero.jpg",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Pozzatto y Pezzutti Asociados - Estudio Jurídico",
+        alt: "Pozzatto y Pezzutti Asociados - Estudio Jurídico en Mendoza",
       },
     ],
   },
