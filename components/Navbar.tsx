@@ -34,7 +34,7 @@ export default function Navbar() {
                     <div className={`text-2xl font-bold ${isDarkMode ? "text-[#e0ae94]" : "text-[#4a4035]"}`}>
                         Pozzatto y Pezzutti Asoc.
                     </div>
-                    <div className="hidden md:flex space-x-8" style={{ fontSize: "1.10rem", fontWeight: "700" }}>
+                    <div className="hidden lg:flex space-x-8" style={{ fontSize: "1.10rem", fontWeight: "700" }}>
                         {["Inicio", "Acerca de", "Servicios", "Como trabajamos", "Contacto"].map((item) => (
                             <a
                                 key={item}
@@ -47,7 +47,7 @@ export default function Navbar() {
                         ))}
                     </div>
                     <div className="flex items-center space-x-4">
-                        <div className={`hidden md:block ${!isDarkMode ? "[&_a]:text-[#4a4035] [&_a:hover]:text-[#c4a282]" : ""}`}>
+                        <div className={`hidden lg:block ${!isDarkMode ? "[&_a]:text-[#4a4035] [&_a:hover]:text-[#c4a282]" : ""}`}>
                             <SocialIcons />
                         </div>
                         <Button
@@ -58,9 +58,6 @@ export default function Navbar() {
                         >
                             {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
                         </Button>
-                        <div className="md:hidden">
-                            <Button className="bg-[#D4AF37] hover:bg-[#C19B22] text-white">Menú</Button>
-                        </div>
                     </div>
                 </div>
             </div>

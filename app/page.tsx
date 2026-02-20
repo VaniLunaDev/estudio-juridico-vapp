@@ -112,17 +112,17 @@ function LawFirmLanding() {
       )}
 
       {/* Hero Section */}
-      <section id="inicio" className="relative h-[80vh] flex items-center justify-center pt-16">
+      <section id="inicio" className="relative h-[60vh] sm:h-[70vh] md:h-[80vh] flex items-center justify-center pt-20 md:pt-16 pb-8">
         <Image
           src="/img/hero.webp"
           alt="Elegant office interior"
           fill
           sizes="100vw"
-          className="absolute z-0 object-cover object-[center_45%]"
+          className="absolute z-0 object-cover object-center md:object-[center_45%]"
         />
-        <div className="relative z-10 text-center text-white">
-          <h1 className="text-5xl font-bold mb-4">Pozzatto y Pezzutti Asociados</h1>
-          <p className="text-xl mb-8">Excelencia legal con un toque personal</p>
+        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 md:mb-4">Pozzatto y Pezzutti Asociados</h1>
+          <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8">Excelencia legal con un toque personal</p>
           {/* <h5 className="text-xl mb-8">9 de Julio 672. PA. OF 8 </h5> */}
           <Button
             className="bg-[#c8a482] hover:bg-[#C19B22] text-white rounded-xl"
@@ -137,18 +137,19 @@ function LawFirmLanding() {
       </section>
 
       {/* About Us Section */}
-      <section id="acerca-de" className={`py-20 ${isDarkMode ? "bg-[#0f1c19]" : "bg-[#f5f0eb]"}`}>
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-2">Acerca de Nosotras</h2>
-          <div className="w-20 h-0.5 mx-auto mb-12 rounded-full bg-[#c8a482]/70" aria-hidden />
+      <section id="acerca-de" className={`py-12 md:py-20 ${isDarkMode ? "bg-[#0f1c19]" : "bg-[#f5f0eb]"}`}>
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">Acerca de Nosotras</h2>
+          <div className="w-20 h-0.5 mx-auto mb-6 md:mb-12 rounded-full bg-[#c8a482]/70" aria-hidden />
           <div className="flex flex-col md:flex-row items-center justify-between">
+            {/* Logo: en móvil va debajo del título (primero en la columna); en desktop a la izquierda */}
             <div className="md:w-1/2 mb-8 md:mb-0 flex justify-center">
               <Image
                 src="/img/calidad.png"
                 alt="VA Gestiones Judiciales Logo"
                 width={500}
                 height={500}
-                className="rounded-xl shadow-xl -mt-20"
+                className="rounded-xl shadow-xl w-full max-w-[280px] md:max-w-none md:-mt-20"
                 quality={75}
               />
             </div>
@@ -214,33 +215,33 @@ function LawFirmLanding() {
       </section >
 
       {/* Services Section - Bento Grid */}
-      <section id="servicios" className={`py-20 ${isDarkMode ? "bg-[#1e2d2a]" : "bg-[#f2ddd0]"}`}>
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-2">Nuestros Servicios</h2>
-          <div className="w-20 h-0.5 mx-auto mb-12 rounded-full bg-[#c8a482]/70" aria-hidden />
-          <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr] gap-4 md:gap-5 md:grid-template-rows-[repeat(3,minmax(200px,1fr))]">
+      <section id="servicios" className={`py-12 md:py-20 overflow-x-hidden ${isDarkMode ? "bg-[#1e2d2a]" : "bg-[#f2ddd0]"}`}>
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">Nuestros Servicios</h2>
+          <div className="w-20 h-0.5 mx-auto mb-8 md:mb-12 rounded-full bg-[#c8a482]/70" aria-hidden />
+          <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr] gap-4 md:gap-5 md:grid-rows-[repeat(3,minmax(200px,1fr))] w-full min-w-0">
             {/* Columna izquierda: Derecho Societario arriba + 3 cuadraditos independientes abajo */}
-            <FadeInSection delay={0} className="md:col-start-1 md:row-start-1 md:row-span-2 md:min-h-0 flex flex-col md:grid md:grid-rows-[1fr_auto] md:gap-4 md:gap-5">
+            <FadeInSection delay={0} className="min-w-0 md:col-start-1 md:row-start-1 md:row-span-2 md:min-h-0 flex flex-col md:grid md:grid-rows-[1fr_auto] md:gap-4 md:gap-5">
               {/* Recuadro Derecho Societario (solo contenido) */}
               <div
-                className={`group relative h-[280px] md:h-full min-h-[220px] rounded-2xl overflow-hidden border border-[#c8a482]/25 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-[#c8a482]/50 hover:-translate-y-0.5 ${isDarkMode ? "bg-[#273632] border-[#3d4a48]" : "bg-[#f5f0eb] border-gray-100"}`}
+                className={`group relative min-h-[220px] h-auto md:h-full rounded-2xl overflow-hidden border border-[#c8a482]/25 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-[#c8a482]/50 hover:-translate-y-0.5 min-w-0 ${isDarkMode ? "bg-[#273632] border-[#3d4a48]" : "bg-[#f5f0eb] border-gray-100"}`}
               >
-                <div className="flex flex-col h-full p-5 md:p-6">
-                  <div className="flex items-start gap-3 mb-3">
+                <div className="flex flex-col h-full min-h-[220px] p-5 md:p-6 min-w-0">
+                  <div className="flex items-start gap-3 mb-3 shrink-0">
                     <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-[#c8a482]/15 text-[#c8a482] shrink-0 transition-all duration-300 group-hover:bg-[#c8a482] group-hover:text-white">
                       <Building2 className="w-5 h-5" strokeWidth={2} />
                     </div>
-                    <h3 className={`text-lg md:text-xl font-bold pt-1.5 ${isDarkMode ? "text-[#e0cabd]" : "text-[#252015]"}`}>
+                    <h3 className={`text-lg md:text-xl font-bold pt-1.5 min-w-0 ${isDarkMode ? "text-[#e0cabd]" : "text-[#252015]"}`}>
                       {services[0].title}
                     </h3>
                   </div>
-                  <p className={`text-sm leading-relaxed flex-1 md:line-clamp-none ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
+                  <p className={`text-sm leading-relaxed flex-1 break-words ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
                     {services[0].description}
                   </p>
                 </div>
               </div>
               {/* 3 cuadraditos independientes (recuadros separados) */}
-              <div className="grid grid-cols-3 gap-2 md:gap-3 md:grid-rows-1">
+              <div className="grid grid-cols-3 gap-2 md:gap-3 md:grid-rows-1 min-w-0 mt-4 md:mt-5">
                 {[
                   { Icon: Briefcase, label: "Sociedades" },
                   { Icon: FileSignature, label: "Contratos" },
@@ -268,20 +269,20 @@ function LawFirmLanding() {
                     : index === 2 ? "md:col-start-2 md:row-start-2"
                       : "md:col-start-3 md:row-start-2"
               return (
-                <FadeInSection key={service.title} delay={(index + 1) * 120} className={gridPlace}>
+                <FadeInSection key={service.title} delay={(index + 1) * 120} className={`min-w-0 ${gridPlace}`}>
                   <div
-                    className={`group relative h-[280px] md:h-full min-h-[260px] rounded-2xl overflow-hidden border border-[#c8a482]/25 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-[#c8a482]/50 hover:-translate-y-0.5 ${isMASC ? (isDarkMode ? "bg-[#1e3028] border-[#c8a482]/30" : "bg-[#252015] border-[#c8a482]/30") : isDarkMode ? "bg-[#273632] border-[#3d4a48]" : "bg-[#f5f0eb] border-gray-100"}`}
+                    className={`group relative h-[280px] md:h-full min-h-[260px] rounded-2xl overflow-hidden border border-[#c8a482]/25 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-[#c8a482]/50 hover:-translate-y-0.5 min-w-0 ${isMASC ? (isDarkMode ? "bg-[#1e3028] border-[#c8a482]/30" : "bg-[#252015] border-[#c8a482]/30") : isDarkMode ? "bg-[#273632] border-[#3d4a48]" : "bg-[#f5f0eb] border-gray-100"}`}
                   >
-                    <div className="flex flex-col h-full p-5 md:p-6">
-                      <div className="flex items-start gap-3 mb-3">
+                    <div className="flex flex-col h-full p-5 md:p-6 min-w-0">
+                      <div className="flex items-start gap-3 mb-3 shrink-0">
                         <div className={`flex items-center justify-center w-11 h-11 rounded-xl shrink-0 transition-all duration-300 ${isMASC ? "bg-black/20 text-[#e0cabd] group-hover:bg-black/30" : "bg-[#c8a482]/15 text-[#c8a482] group-hover:bg-[#c8a482] group-hover:text-white"}`}>
                           <IconComponent className="w-5 h-5" strokeWidth={2} />
                         </div>
-                        <h3 className={`text-lg md:text-xl font-bold pt-1.5 ${isMASC ? "text-[#e0cabd]" : isDarkMode ? "text-[#e0cabd]" : "text-[#252015]"}`}>
+                        <h3 className={`text-lg md:text-xl font-bold pt-1.5 min-w-0 ${isMASC ? "text-[#e0cabd]" : isDarkMode ? "text-[#e0cabd]" : "text-[#252015]"}`}>
                           {service.title}
                         </h3>
                       </div>
-                      <p className={`text-sm leading-relaxed flex-1 line-clamp-4 ${isMASC ? "text-gray-400" : isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
+                      <p className={`text-sm leading-relaxed flex-1 line-clamp-4 break-words ${isMASC ? "text-gray-400" : isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
                         {service.description}
                       </p>
                     </div>
@@ -290,27 +291,27 @@ function LawFirmLanding() {
               )
             })}
             {/* Fila 3: Derecho Inmobiliario a la izquierda + 3 cuadraditos apilados a la derecha */}
-            <FadeInSection delay={600} className="md:col-start-1 md:col-span-2 md:row-start-3">
+            <FadeInSection delay={600} className="min-w-0 md:col-start-1 md:col-span-2 md:row-start-3">
               <div
-                className={`group relative h-[280px] md:h-full min-h-[220px] rounded-2xl overflow-hidden border border-[#c8a482]/25 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-[#c8a482]/50 hover:-translate-y-0.5 ${isDarkMode ? "bg-[#273632] border-[#3d4a48]" : "bg-[#f5f0eb] border-gray-100"}`}
+                className={`group relative min-h-[220px] h-auto md:h-full rounded-2xl overflow-hidden border border-[#c8a482]/25 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-[#c8a482]/50 hover:-translate-y-0.5 min-w-0 ${isDarkMode ? "bg-[#273632] border-[#3d4a48]" : "bg-[#f5f0eb] border-gray-100"}`}
               >
-                <div className="flex flex-col h-full p-5 md:p-6">
-                  <div className="flex items-start gap-3 mb-3">
+                <div className="flex flex-col h-full min-h-[220px] p-5 md:p-6 min-w-0">
+                  <div className="flex items-start gap-3 mb-3 shrink-0">
                     <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-[#c8a482]/15 text-[#c8a482] shrink-0 transition-all duration-300 group-hover:bg-[#c8a482] group-hover:text-white">
                       <Home className="w-5 h-5" strokeWidth={2} />
                     </div>
-                    <h3 className={`text-lg md:text-xl font-bold pt-1.5 ${isDarkMode ? "text-[#e0cabd]" : "text-[#252015]"}`}>
+                    <h3 className={`text-lg md:text-xl font-bold pt-1.5 min-w-0 ${isDarkMode ? "text-[#e0cabd]" : "text-[#252015]"}`}>
                       {services[5].title}
                     </h3>
                   </div>
-                  <p className={`text-sm leading-relaxed flex-1 ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
+                  <p className={`text-sm leading-relaxed flex-1 break-words ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
                     {services[5].description}
                   </p>
                 </div>
               </div>
             </FadeInSection>
             {/* 3 cuadraditos verticales: mismo ancho que el recuadro de arriba (Contratos) */}
-            <FadeInSection delay={650} className="md:col-start-3 md:row-start-3 flex flex-col gap-2 md:gap-3 md:h-full w-full">
+            <FadeInSection delay={650} className="min-w-0 md:col-start-3 md:row-start-3 flex flex-col gap-2 md:gap-3 md:h-full w-full">
               {[
                 { Icon: Home, label: "Remates y Embargos" },
                 { Icon: FileText, label: "Indemnizaciones laborales" },
