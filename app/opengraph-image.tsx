@@ -47,7 +47,7 @@ export default async function Image() {
               style={{
                 display: "flex",
                 fontSize: "20px",
-                color: "#B49A78",
+                color: "#252015",
                 fontWeight: "bold",
                 textTransform: "uppercase",
                 letterSpacing: "4px",
@@ -100,7 +100,7 @@ export default async function Image() {
           >
             <div style={{
               display: "flex",
-              color: "#B49A78",
+              color: "#252015",
               fontSize: "24px",
               fontWeight: "bold",
               border: "1px solid #B49A78",
@@ -110,7 +110,7 @@ export default async function Image() {
               VA
             </div>
             <div style={{ display: "flex", width: "1px", height: "30px", backgroundColor: "#B49A78", opacity: 0.5 }} />
-            <div style={{ display: "flex", color: "#FFFFFF", fontSize: "14px", letterSpacing: "2px", opacity: 0.8 }}>
+            <div style={{ display: "flex", color: "#252015", fontSize: "14px", letterSpacing: "2px", opacity: 0.8 }}>
               SOLUCIONES INTEGRALES
             </div>
           </div>
