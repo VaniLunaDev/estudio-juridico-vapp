@@ -26,7 +26,7 @@ export default async function Image() {
             display: "flex",
             width: "100%",
             height: "100%",
-            backgroundColor: "#e0cabd",
+            backgroundColor: "#252015",
             borderRadius: "32px",
             overflow: "hidden",
             position: "relative",
@@ -47,7 +47,7 @@ export default async function Image() {
               style={{
                 display: "flex",
                 fontSize: "20px",
-                color: "#252015",
+                color: "#B49A78",
                 fontWeight: "bold",
                 textTransform: "uppercase",
                 letterSpacing: "4px",
@@ -68,7 +68,7 @@ export default async function Image() {
                 marginBottom: "30px",
               }}
             >
-              <span style={{ color: "#252015" }}>Pozzatto & Pezzutti</span>
+              <span>Pozzatto & Pezzutti</span>
               <span style={{ color: "#B49A78" }}>Asociados</span>
             </div>
 
@@ -78,7 +78,7 @@ export default async function Image() {
               style={{
                 display: "flex",
                 fontSize: "28px",
-                color: "#252015",
+                color: "#D1D1D1",
                 maxWidth: "700px",
                 lineHeight: 1.4,
                 fontStyle: "italic"
@@ -100,7 +100,7 @@ export default async function Image() {
           >
             <div style={{
               display: "flex",
-              color: "#252015",
+              color: "#B49A78",
               fontSize: "24px",
               fontWeight: "bold",
               border: "1px solid #B49A78",
@@ -110,7 +110,7 @@ export default async function Image() {
               VA
             </div>
             <div style={{ display: "flex", width: "1px", height: "30px", backgroundColor: "#B49A78", opacity: 0.5 }} />
-            <div style={{ display: "flex", color: "#252015", fontSize: "14px", letterSpacing: "2px", opacity: 0.8 }}>
+            <div style={{ display: "flex", color: "#FFFFFF", fontSize: "14px", letterSpacing: "2px", opacity: 0.8 }}>
               SOLUCIONES INTEGRALES
             </div>
           </div>
