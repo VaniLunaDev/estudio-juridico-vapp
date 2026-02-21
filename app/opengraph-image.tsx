@@ -47,7 +47,7 @@ export default async function Image() {
               style={{
                 display: "flex",
                 fontSize: "20px",
-                color: "#B49A78",
+                color: "#e0cabd",
                 fontWeight: "bold",
                 textTransform: "uppercase",
                 letterSpacing: "4px",
@@ -100,10 +100,10 @@ export default async function Image() {
           >
             <div style={{
               display: "flex",
-              color: "#B49A78",
+              color: "#e0cabd",
               fontSize: "24px",
               fontWeight: "bold",
-              border: "1px solid #B49A78",
+              border: "1px solid #e0cabd",
               padding: "2px 8px",
               borderRadius: "4px"
             }}>
