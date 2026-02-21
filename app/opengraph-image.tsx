@@ -26,7 +26,7 @@ export default async function Image() {
             display: "flex",
             width: "100%",
             height: "100%",
-            backgroundColor: "#1A1A17",
+            backgroundColor: "#e0cabd",
             borderRadius: "32px",
             overflow: "hidden",
             position: "relative",
@@ -68,7 +68,7 @@ export default async function Image() {
                 marginBottom: "30px",
               }}
             >
-              <span>Pozzatto & Pezzutti</span>
+              <span style={{ color: "#252015" }}>Pozzatto & Pezzutti</span>
               <span style={{ color: "#B49A78" }}>Asociados</span>
             </div>
 
@@ -78,7 +78,7 @@ export default async function Image() {
               style={{
                 display: "flex",
                 fontSize: "28px",
-                color: "#D1D1D1",
+                color: "#252015",
                 maxWidth: "700px",
                 lineHeight: 1.4,
                 fontStyle: "italic"
