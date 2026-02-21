@@ -32,8 +32,7 @@ export default async function Image() {
             position: "relative",
           }}
         >
-          {/* Lado izquierdo: Toque de color */}
-          <div style={{ width: "20px", height: "100%", backgroundColor: "#B49A78" }} />
+          <div style={{ display: "flex", width: "20px", height: "100%", backgroundColor: "#B49A78" }} />
 
           <div
             style={{
@@ -46,6 +45,7 @@ export default async function Image() {
           >
             <div
               style={{
+                display: "flex",
                 fontSize: "20px",
                 color: "#B49A78",
                 fontWeight: "bold",
@@ -59,6 +59,8 @@ export default async function Image() {
 
             <div
               style={{
+                display: "flex",
+                flexDirection: "column",
                 fontSize: "72px",
                 fontWeight: "bold",
                 color: "#FFFFFF",
@@ -66,14 +68,15 @@ export default async function Image() {
                 marginBottom: "30px",
               }}
             >
-              Pozzatto & Pezzutti <br />
+              <span>Pozzatto & Pezzutti</span>
               <span style={{ color: "#B49A78" }}>Asociados</span>
             </div>
 
-            <div style={{ width: "80px", height: "4px", backgroundColor: "#B49A78", marginBottom: "30px" }} />
+            <div style={{ display: "flex", width: "80px", height: "4px", backgroundColor: "#B49A78", marginBottom: "30px" }} />
 
             <div
               style={{
+                display: "flex",
                 fontSize: "28px",
                 color: "#D1D1D1",
                 maxWidth: "700px",
@@ -93,18 +96,26 @@ export default async function Image() {
               display: "flex",
               alignItems: "center",
               gap: "15px",
-              opacity: 0.8
             }}
           >
-            <img
-              src={`${baseUrl}/favicon.svg`}
-              width="30"
-              height="30"
-              style={{ filter: "brightness(0) saturate(100%) invert(71%) sepia(13%) saturate(763%) hue-rotate(3deg) brightness(91%) contrast(85%)" }}
-            />
-            <div style={{ width: "1px", height: "30px", backgroundColor: "#B49A78" }} />
-            <div style={{ color: "#FFFFFF", fontSize: "16px", letterSpacing: "1px" }}>SOLUCIONES INTEGRALES</div>
+            <div style={{
+              display: "flex",
+              color: "#B49A78",
+              fontSize: "24px",
+              fontWeight: "bold",
+              border: "1px solid #B49A78",
+              padding: "2px 8px",
+              borderRadius: "4px"
+            }}>
+              VA
+            </div>
+            <div style={{ display: "flex", width: "1px", height: "30px", backgroundColor: "#B49A78", opacity: 0.5 }} />
+            <div style={{ display: "flex", color: "#FFFFFF", fontSize: "14px", letterSpacing: "2px", opacity: 0.8 }}>
+              SOLUCIONES INTEGRALES
+            </div>
           </div>
+
+          <div style={{ display: "none" }}>{baseUrl}</div>
         </div>
       </div>
     ),
