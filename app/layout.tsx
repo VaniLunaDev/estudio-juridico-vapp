@@ -6,7 +6,7 @@ import type React from "react"
 const inter = Inter({ subsets: ["latin"] })
 
 // Base URL del sitio (para SEO: OG, canonical). Definir NEXT_PUBLIC_SITE_URL en .env en producción.
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://pozzattoypezzutti.com"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.estudiojuridicointegralvapp.com.ar"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
